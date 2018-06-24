@@ -11,22 +11,15 @@
 <body>
     <form id="FrmBingoGame" runat="server">
     <div>
-        <%--<asp:Button ID="btnClear" runat="server" Text="Clear" OnClientClick=""/>--%>
-        
         <br />
         <br />
         Input : <asp:TextBox ID="txtInput" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="btnAdd" runat="server" Text="Add" onclick="btnAdd_Click"/>
-        <br />
-        <br />
-        InputBingo : 
-        <asp:Label ID="lblInputBingo" runat="server" Text=""></asp:Label>
-        <br />
-        <br />
         <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
             onclick="btnSubmit_Click"/>
+            
+        <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
         <%--<table>
             <tr>
                 <td id="t1" width="50px" onclick="ClickNumber('t1')">

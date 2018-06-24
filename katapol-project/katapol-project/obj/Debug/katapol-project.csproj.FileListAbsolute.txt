@@ -3,3 +3,8 @@ C:\Mic\Project\rmic-project\katapol-project\katapol-project\bin\katapol-project.
 C:\Mic\Project\rmic-project\katapol-project\katapol-project\obj\Debug\ResolveAssemblyReference.cache
 C:\Mic\Project\rmic-project\katapol-project\katapol-project\obj\Debug\katapol-project.dll
 C:\Mic\Project\rmic-project\katapol-project\katapol-project\obj\Debug\katapol-project.pdb
+C:\Mic\Project\katapol-project\katapol-project\katapol-project\bin\katapol-project.dll
+C:\Mic\Project\katapol-project\katapol-project\katapol-project\bin\katapol-project.pdb
+C:\Mic\Project\katapol-project\katapol-project\katapol-project\obj\Debug\ResolveAssemblyReference.cache
+C:\Mic\Project\katapol-project\katapol-project\katapol-project\obj\Debug\katapol-project.dll
+C:\Mic\Project\katapol-project\katapol-project\katapol-project\obj\Debug\katapol-project.pdb
