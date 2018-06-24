@@ -11,13 +11,13 @@
 <body>
     <form id="FrmFormulaCalculation" runat="server">
         <div>
-            Input : <asp:TextBox ID="txtInput" runat="server"></asp:TextBox>
+            Input : <asp:TextBox ID="txtInputCalculation" runat="server" onblur="ReplaceSpace()"></asp:TextBox>
             
             <br />
             <br />
             
             <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
-                onclick="btnSubmit_Click"/>
+                onclick="btnSubmit_Click" OnClientClick="return CheckInputCalculation();"/>
 
             <br />
             <br />
