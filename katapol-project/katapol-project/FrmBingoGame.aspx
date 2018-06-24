@@ -17,7 +17,7 @@
         <br />
         <br />
         <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
-            onclick="btnSubmit_Click"/>
+            onclick="btnSubmit_Click" OnClientClick="return CheckInputBingo()"/>
             
         <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
         <%--<table>

@@ -106,22 +106,21 @@ namespace katapol_project
             }
         }
 
-        private bool CheckMainResult(string[] inputBingoArr, int[] inputArrCheck)
+        private bool CheckMainResult(string[] inputBingoArr, int[] checkArr)
         {
             bool result = false;
             try
             {
-                for (int i = 0; i < inputBingoArr.Length; i++)
+                for (int i = 0; i < checkArr.Length; i++)
                 {
-                    int valueInt = Int32.Parse(inputBingoArr[i]);
-                    if (CheckSubResult(valueInt, inputArrCheck))
+                    if (CheckSubResult(checkArr[i], inputBingoArr))
                     {
                         result = true; //ตัวนั้น มีอยู่ใน bingo
-                        break;
                     }
                     else
                     {
                         result = false; //ไม่อยู่ใน bingo
+                        break;
                     }
                 }
 
@@ -133,17 +132,22 @@ namespace katapol_project
             }
         }
 
-        private bool CheckSubResult(int value, int[] inputArrCheck)
+        private bool CheckSubResult(int checkArr, string[] inputBingoArr)
         {
             bool result = false;
             try
             {
-                for (int i = 0; i < inputArrCheck.Length; i++)
+                for (int i = 0; i < inputBingoArr.Length; i++)
                 {
-                    if (value == inputArrCheck[i])
+                    int number;
+                    if (int.TryParse(inputBingoArr[i].Trim(), out number))
                     {
-                        result = true; //ถ้าตัวใดตัวนึงถูก
-                        break;
+                        int inputBingoInt = Int32.Parse(inputBingoArr[i].Trim());
+                        if (checkArr == inputBingoInt)
+                        {
+                            result = true; //ถ้าตัวใดตัวนึงถูก
+                            break;
+                        }
                     }
                 }
 
@@ -156,6 +160,5 @@ namespace katapol_project
                 throw ex;
             }
         }
-
     }
 }
