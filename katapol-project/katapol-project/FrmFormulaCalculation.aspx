@@ -6,7 +6,7 @@
 <head runat="server">
     <title>FormulaCalculation</title>
 
-    <script src="js/js.js" type="text/javascript"></script>
+    <script src="Js/js.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="FrmFormulaCalculation" runat="server">
